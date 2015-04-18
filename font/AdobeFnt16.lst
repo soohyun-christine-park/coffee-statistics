@@ -1,0 +1,49 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AkzidenzGroteskBQ-Medium
+FamilyName:Akzidenz-Grotesk BQ
+StyleName:Medium
+MenuName:Akzidenz-Grotesk BQ
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Akzidenz-Grotesk BQ Medium
+WritingScript:Roman
+OutlineFileName:\AkzidenzGrotesk-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:31440
+FileModTime:1326999434
+NameArray:0,Mac,4,Akzidenz-Grotesk BQ Medium
+NameArray:0,Win,1,Akzidenz-Grotesk BQ
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AkzidenzGroteskBQ-Reg
+FamilyName:Akzidenz-Grotesk BQ
+StyleName:Regular
+MenuName:Akzidenz-Grotesk BQ
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Akzidenz-Grotesk BQ Regular
+WritingScript:Roman
+OutlineFileName:\AkzidenzGrotesk-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:31564
+FileModTime:1326999434
+NameArray:0,Mac,4,Akzidenz-Grotesk BQ Regular
+NameArray:0,Win,1,Akzidenz-Grotesk BQ
+%EndFont
+

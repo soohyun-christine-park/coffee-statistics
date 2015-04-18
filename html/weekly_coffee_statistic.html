@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Coffee at CG!</title>
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/week_coffee.css">
+<link rel="stylesheet" type="text/css" href="../css/weather-icons.min.css">
+<script type="text/javascript" src="../js/snap.svg-min.js"></script>
+<script type="text/javascript" src="../js/jquery.transit.js"></script>
+<script type="text/javascript" src="../js/weekly_coffee_info.js"></script>
+<script type="text/javascript" src="../js/jquery.textillate.js"></script>
+<script type="text/javascript" src="../js/weatherJS/weather.min.js"></script>
+<script type="text/javascript" src="../js/weather_info.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+<script>
+ $(document).ready(function(){
+
+ 
+});
+
+</script>
+
+</head>
+<header><p class="h_logo">Control Group</p><p class="topic">CG Coffee</p></header>
+<body>
+
+	<div id="weekly_statistic_container">
+
+		<div class="description_container" style="">
+			<p class="desc">weekly coffee consumption [cups]</p>
+			<div id="desc_shape_0" class="desc_shape"></div>
+			<div id="desc_shape_1" class="desc_shape"></div>
+		</div>
+		<div class="desc_tag_container">
+			<div id="tag_desc_0"><div id="d_tag0" class="d_l_tag">Last week consumed coffee cups</div></div>
+			<div id="tag_desc_1"><div id="d_tag1" class="d_t_tag">This week consumed coffee cups</div></div>
+		</div>
+
+		<div class="graph_box">
+			<ul class="tags">
+				<li id="l_w_tag"><p class="last_week_tag">Last Week</p></li>
+				<li id="t_w_tag"><p class="this_week_tag">This Week</p></li>
+				<li id="tag_0"><p class="l_tag">10</p></li>
+				<li id="tag_1"><p class="l_tag">10</p></li>
+				<li id="tag_2"><p class="l_tag">10</p></li>
+				<li id="tag_3"><p class="l_tag">10</p></li>
+				<li id="tag_4"><p class="l_tag">10</p></li>
+				<li id="tag_5"><p class="t_tag">10</p></li>
+				<li id="tag_6"><p class="t_tag">10</p></li>
+				<li id="tag_7"><p class="t_tag">10</p></li>
+				<li id="tag_8"><p class="t_tag">10</p></li>
+				<li id="tag_9"><p class="t_tag">10</p></li>
+			</ul>
+			<div class="box">
+				<div class="last_week">
+					<div id="container_0" class="day_container"><div id="day_0" class="day0"><p id="cups_1" class="cups"></p></div></div>
+					<div id="container_1" class="day_container"><div id="day_1" class="day0"><p id="cups_2" class="cups"></p></div></div>
+					<div id="container_2" class="day_container"><div id="day_2" class="day0"><p id="cups_3" class="cups"></p></div></div>
+					<div id="container_3" class="day_container"><div id="day_3" class="day0"><p id="cups_4" class="cups"></p></div></div>
+					<div id="container_4" class="day_container"><div id="day_4" class="day0"><p id="cups_5" class="cups"></p></div></div>
+				</div>
+				<div class="this_week">
+					<div id="container_5" class="day_container"><div id="day_5" class="day1"><p id="cups_6" class="cups"></p></div></div>
+					<div id="container_6" class="day_container"><div id="day_6" class="day1"><p id="cups_7" class="cups"></p></div></div>
+					<div id="container_7" class="day_container"><div id="day_7" class="day1"><p id="cups_8" class="cups"></p></div></div>
+					<div id="container_8"class="day_container"><div id="day_8" class="day1"><p id="cups_9" class="cups"></p></div></div>
+					<div id="container_9" class="day_container"><div id="day_9" class="day1"><p id="cups_10" class="cups"></p></div></div>
+					<!-- <svg><line id="line_4" class="graph_line"></line></svg>
+					<svg><line id="line_5" class="graph_line"></line></svg>
+					<svg><line id="line_6" class="graph_line"></line></svg>
+					<svg><line id="line_7" class="graph_line"></line></svg> -->
+				</div>
+							</div>
+
+			<div class="week_title">
+				<div id="mon" class="day_title">Mon</div>
+				<div id="tues" class="day_title">Tues</div>
+				<div id="wed" class="day_title">Wed</div>
+				<div id="thurs" class="day_title">Thurs</div>
+				<div id="fri" class="day_title">Fri</div>
+				<div class="today_indicator"><p>Today</p></div>
+			</div>
+			
+
+		</div>
+
+
+
+		<div class="line"></div>	
+
+	</div>
+
+	<div id="ending_scene">
+		<div id="coffee_cup_container">
+				<div class="coffee_cup">
+					<div class="cup">
+						<div class="smoke">
+							<div class="s_1"></div>
+							<div class="s_2"></div>
+							<div class="s_3"></div>
+							<div class="s_4"></div>
+						</div>
+					</div>  <!-- cup -->
+					<div class="cup_content">
+						<p id="cup_logo">CG</p>
+						<div class="coffee">
+						</div>
+						<div class="brewed_coffee">
+						</div>
+						<div class="coffee_died">
+							<div class="no_coffee">
+							</div>
+							<div class="no_coffee_dot1">x
+							</div>
+							<div class="no_coffee_dot2">x
+							</div>
+						</div> <!-- coffee_died -->
+						<div class="time_container">
+							<div class="time_0"></div>
+						</div>
+
+					</div>  <!-- cup -->
+					<div class="handle_top">
+						<div class="handle_hole_container">
+							<div class="handle_hole">
+							</div>
+						</div>
+					</div>
+					<div class="handle">
+					</div>
+
+					<div class="remained_coffee_cups"></div>
+					<div class="last_brewed_time">Brewed at </div>
+
+				</div>  <!-- coffee_cup -->
+				<div class="cup_shadow"></div>
+				
+
+
+			</div>  <!-- coffee_cup_container -->
+		<div class="falling_coffee"></div>
+		<div class="enjoy_txt">enjoy !</div>
+	</div>  <!-- ending_scene -->
+
+	<section id="ending_logo">
+    <div class="mask_frame"><div class="logo_frame"></div></div>
+    
+  </section>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Coffee at CG!</title>
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/coffee.css">
+<script type="text/javascript" src="js/snap.svg-min.js"></script>
+<script type="text/javascript" src="js/jquery.transit.js"></script>
+<script type="text/javascript" src="js/current_coffee_info.js"></script>
+<script type="text/javascript" src="js/clock_coffee_info.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+
+<script>
+ $(document).ready(function(){
+ 
+	for(var i=0; i < 12; i++){
+		if((i+6)%12 == 0){
+			$('.clock_line').append('<div class="hour_line" style="-webkit-transform-origin:0em -12.5em;-webkit-transform:rotate('+(30*i)+'deg)"><p style="-webkit-transform:rotate('+(-1*30*i)+'deg)">12</p></div>');
+		}else{
+	      $('.clock_line').append('<div class="hour_line" style="-webkit-transform-origin:0em -12.5em;-webkit-transform:rotate('+(30*i)+'deg)"><p style="-webkit-transform:rotate('+(-1*30*i)+'deg)">'+(i+6)%12+'</p></div>');
+	  }
+    }
+
+
+    $('.fader').animate({
+    	'opacity':'0'
+    },'slow');
+
+ });
+
+
+
+</script>
+<style>
+
+</style>
+</head>
+<header><p class="h_logo">Control Group</p><p class="topic">CG Coffee</p></header>
+<body>
+<div class="fader"><div class="logo_frame0"></div></div>
+	<section id="today_coffee_statistic">
+		<div id="today_container">
+			<div id="coffee_cup_container">
+				<div class="coffee_cup">
+					<div class="cup">
+						<div class="smoke">
+							<div class="s_1"></div>
+							<div class="s_2"></div>
+							<div class="s_3"></div>
+							<div class="s_4"></div>
+						</div>
+					</div>  <!-- cup -->
+					<div class="cup_content">
+
+						<div class="coffee">
+						</div>
+						<div class="brewed_coffee">
+						</div>
+						<div class="coffee_died">
+							<div class="no_coffee">
+							</div>
+							<div class="no_coffee_dot1">x
+							</div>
+							<div class="no_coffee_dot2">x
+							</div>
+						</div> <!-- coffee_died -->
+						<div class="time_container">
+							<div class="time_0"></div>
+						</div>
+
+					</div>  <!-- cup -->
+					<div class="handle_top">
+						<div class="handle_hole_container">
+							<div class="handle_hole">
+							</div>
+						</div>
+					</div>
+					<div class="handle">
+					</div>
+
+					<div class="remained_coffee_cups"></div>
+					<div class="last_brewed_time">Brewed at </div>
+				</div>  <!-- coffee_cup -->
+				
+
+
+			</div>  <!-- coffee_cup_container -->
+
+			<div id="clock_container">
+				<svg id="svg" class="clock"></svg>
+				<svg id="test">
+					<path id="arc1" fill="none" stroke="#4c2b25" stroke-width="2" />
+				</svg>
+				<div class="clock_line">
+				</div>
+				<div class="brewed_beans">
+					
+				</div>
+				<div class="bean_desciption"><img class="bean_img" /> :: &nbsp A Brewed Pot</div>
+			</div>  <!-- clock_container -->
+
+		</div>  <!-- today_container -->
+	</section>  <!-- today_coffee_statistic -->
+
+
+</body>
+</html>
+
+
+
