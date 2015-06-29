@@ -1,3 +1,4 @@
+## Control Group Internship Project
 # coffee-statistics
 Live data visualization of coffee statistics. Using coffee pot data API, visualize its statistics effectively and delightfully to employees.
 
